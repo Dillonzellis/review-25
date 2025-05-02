@@ -1,68 +1,34 @@
+import Link from "next/link";
+
+type ListItemProps = {
+  href: string;
+  children: React.ReactNode;
+};
+
+function ListItem({ href, children }: ListItemProps) {
+  return (
+    <li className="hover:underline text-lg">
+      <Link href={href}>{children}</Link>
+    </li>
+  );
+}
+
 export default function Home() {
   return (
-    <div className=" items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1>Review</h1>
-        <h2>Phase 1: FE</h2>
+    <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-4 items-center sm:items-start">
+        <h1 className="text-3xl font-bold">Review</h1>
+        <h2 className="text-2xl">Phase 1: FE</h2>
         <ul>
-          <li>
-            <strong>React Advanced Concepts</strong>
-            <ul>
-              <li>Custom hooks creation and implementation</li>
-              <li>Context API and state management patterns</li>
-              <li>
-                Memoization (useMemo, useCallback) and performance optimization
-              </li>
-              <li>Error boundaries and suspense</li>
-              <li>Server components in React 18+</li>
-            </ul>
-          </li>
-          <li>
-            <strong>TypeScript Mastery</strong>
-            <ul>
-              <li>Advanced type definitions and utility types</li>
-              <li>Generics and conditional types</li>
-              <li>Type guards and narrowing</li>
-              <li>Declaration merging</li>
-              <li>Module augmentation</li>
-            </ul>
-          </li>
+          <ListItem href="/">React Advanced Concepts</ListItem>
+          <ListItem href="/">TypeScript Mastery</ListItem>
         </ul>
 
-        <h2>Phase 2: Expand Full-Stack Capabilities</h2>
+        <h2 className="text-2xl">Phase 2: Full-Stack</h2>
         <ul>
-          <li>
-            <strong>Node.js and API Development</strong>
-            <ul>
-              <li>RESTful API best practices</li>
-              <li>GraphQL schema design and resolvers</li>
-              <li>Authentication and authorization patterns</li>
-              <li>Middleware implementation</li>
-              <li>API security best practices</li>
-            </ul>
-          </li>
-          <li>
-            <strong>AWS Cloud Proficiency</strong>
-            <ul>
-              <li>Serverless architecture with AWS Lambda</li>
-              <li>API Gateway configuration and management</li>
-              <li>DynamoDB and data persistence</li>
-              <li>S3 for storage solutions</li>
-              <li>CloudFormation or CDK for infrastructure as code</li>
-              <li>CI/CD pipelines with AWS CodePipeline</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Next.js Advanced Topics</strong>
-            <ul>
-              <li>Server-side rendering strategies</li>
-              <li>Static site generation optimization</li>
-              <li>API routes implementation</li>
-              <li>Next.js middleware</li>
-              <li>Image optimization</li>
-              <li>New App Router architecture</li>
-            </ul>
-          </li>
+          <ListItem href="">Node.js and API Development</ListItem>
+          <ListItem href="">AWS Cloud Proficiency</ListItem>
+          <ListItem href="">Next.js Advanced Topics</ListItem>
         </ul>
 
         <h2>Phase 3: Technical Interview Preparation (Ongoing)</h2>
