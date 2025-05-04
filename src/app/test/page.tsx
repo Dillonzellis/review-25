@@ -1,12 +1,11 @@
-import CurriculumBlock from "@/components/Curriculum/CurriculumBlock";
+import PhaseBlock from "@/components/PhaseBlock/PhaseBlock";
+import { TypographyH1 } from "@/components/Typograpy/TypographyH1";
 
 export default function TestPage() {
   return (
-    <div>
-      <div>Test Page</div>
-      <div>
-        <CurriculumBlock />
-      </div>
+    <div className="mt-20 flex-col gap-4 flex min-h-screen items-center">
+      <TypographyH1>Test Page</TypographyH1>
+      <PhaseBlock />
     </div>
   );
 }
