@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "npx tsx src/db/seed.ts",
+    "studio": "npx drizzle-kit studio"
   },
   "dependencies": {
     "@libsql/client": "^0.15.4",
