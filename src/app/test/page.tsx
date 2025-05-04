@@ -5,7 +5,7 @@ export default function TestPage() {
   return (
     <div className="mt-20 flex-col gap-4 flex min-h-screen items-center">
       <TypographyH1>Test Page</TypographyH1>
-      <PhaseBlock />
+      <PhaseBlock phaseTitle="phase 1" />
     </div>
   );
 }

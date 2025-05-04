@@ -2,10 +2,22 @@ import { TypographyH2 } from "@/components/Typograpy/TypographyH2";
 import getPhaseData from "./getPhaseData";
 import { PhaseSelectType } from "@/db/schema";
 
-export default async function PhaseBlock() {
-  const phases = await getPhaseData("Phase 1");
+interface PhaseBlockProps {
+  phaseTitle?: string;
+}
 
-  console.log(phases);
+export default async function PhaseBlock({ phaseTitle }: PhaseBlockProps) {
+  const phases = await getPhaseData(phaseTitle || "Phase 1");
+
+  if (phases.length === 0) {
+    return (
+      <div>
+        <TypographyH2>Phase Block</TypographyH2>
+        <div>No phase found with title containing: {phaseTitle}</div>
+      </div>
+    );
+  }
+
   return (
     <div>
       <TypographyH2>Phase Block</TypographyH2>
