@@ -1,7 +1,12 @@
-type TypographyPProps = {
-  children: React.ReactNode;
-};
+import { cn } from "@/lib/utils";
+import { ComponentPropsWithoutRef } from "react";
 
-export function TypographyP({ children }: TypographyPProps) {
-  return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>;
+type TypographyPProps = ComponentPropsWithoutRef<"p">;
+
+export function TypographyP({ children, className }: TypographyPProps) {
+  return (
+    <p className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}>
+      {children}
+    </p>
+  );
 }
