@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "npx tsx src/db/seed.ts",
+    "seed": "npx tsx src/db/seeds/data/index.ts",
     "studio": "npx drizzle-kit studio"
   },
   "dependencies": {

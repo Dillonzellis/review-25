@@ -1,16 +1,6 @@
 import "dotenv/config";
 import { db } from "./client";
-import {
-  CurriculumLinks,
-  CurriculumLinksType,
-  phases,
-  PhaseInsertType,
-} from "./schema";
-
-const CurriculumLinksSeedData: CurriculumLinksType[] = [
-  { id: 1, title: "link 1", link: "/" },
-  { id: 2, title: "2", link: "/" },
-];
+import { phases, PhaseInsertType, TopicInsertType } from "./schema";
 
 const phasesSeedData: PhaseInsertType[] = [
   { title: "Phase 1: Master Core Frontend Skills", orderIndex: 1 },
@@ -18,11 +8,16 @@ const phasesSeedData: PhaseInsertType[] = [
   { title: "Phase 3: Technical Interview Preparation", orderIndex: 3 },
 ];
 
+// const topicsSeedData: TopicInsertType = [
+//   {
+//     title: "",
+//     orderIndex: "",
+//   },
+// ];
+
 async function seedDb(): Promise<void> {
   try {
-    await db.delete(CurriculumLinks);
     await db.delete(phases);
-    await db.insert(CurriculumLinks).values(CurriculumLinksSeedData);
     await db.insert(phases).values(phasesSeedData);
   } catch (e) {
     console.error("Failed to seed. Error: ", e);

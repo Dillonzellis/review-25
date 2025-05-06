@@ -1,0 +1,17 @@
+[
+  {
+    "key": "phase1",
+    "title": "Phase 1: Master Core Frontend Skills",
+    "orderIndex": 1
+  },
+  {
+    "key": "phase2",
+    "title": "Phase 2: Expand Full-Stack Capabilities",
+    "orderIndex": 2
+  },
+  {
+    "key": "phase3",
+    "title": "Phase 3: Technical Interview Preparation",
+    "orderIndex": 3
+  }
+]
