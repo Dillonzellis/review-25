@@ -9,12 +9,12 @@ type ConceptBlockType = {
 
 export default function ConceptBlock({ title, code, desc }: ConceptBlockType) {
   return (
-    <div className="mb-4">
+    <div className="mb-4 bg-slate-900 p-6">
       <TypographyH3>{title}</TypographyH3>
       <code>
         <pre>{code}</pre>
       </code>
-      {desc && <TypographyP>{desc}</TypographyP>}
+      {desc && <TypographyP className="italic">{desc}</TypographyP>}
     </div>
   );
 }
