@@ -7,7 +7,7 @@ type ListItemProps = {
 
 function ListItem({ href, children }: ListItemProps) {
   return (
-    <li className="hover:underline text-lg">
+    <li className="text-lg hover:underline">
       <Link href={href}>{children}</Link>
     </li>
   );
@@ -15,8 +15,8 @@ function ListItem({ href, children }: ListItemProps) {
 
 export default function Home() {
   return (
-    <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-4 items-center sm:items-start">
+    <div className="min-h-screen items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
+      <main className="flex flex-col items-center gap-4 sm:items-start">
         <h1 className="text-3xl font-bold">Review</h1>
         <h2 className="text-2xl">Phase 1: FE</h2>
         <ul>
