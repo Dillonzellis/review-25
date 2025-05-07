@@ -31,6 +31,21 @@ job: Developer
       `}
         desc="Iterates over the enumerable properties of an object."
       />
+
+      <ConceptBlock
+        title="For Of Loop"
+        code={`
+const colors = ["red", "green", "blue"];
+for (let color of colors) {
+  console.log(color);
+}
+
+red
+green
+blue
+      `}
+        desc="Iterate over array elements"
+      />
     </MaxWidthWrapper>
   );
 }
