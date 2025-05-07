@@ -6,7 +6,7 @@ import ConceptBlock from "@/components/ConceptBlock/ConceptBlock";
 export default function JsPage() {
   return (
     <MaxWidthWrapper>
-      <TypographyH1>JS Page</TypographyH1>
+      <TypographyH1 className="mb-4">JS Page</TypographyH1>
       <TypographyH2>Loops</TypographyH2>
       <hr className="pb-4" />
       <ConceptBlock
