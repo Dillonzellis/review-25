@@ -4,9 +4,5 @@ import { ComponentPropsWithoutRef } from "react";
 type TypographyPProps = ComponentPropsWithoutRef<"p">;
 
 export function TypographyP({ children, className }: TypographyPProps) {
-  return (
-    <p className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}>
-      {children}
-    </p>
-  );
+  return <p className={cn("leading-7", className)}>{children}</p>;
 }
