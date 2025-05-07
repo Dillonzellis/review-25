@@ -16,7 +16,21 @@ for (let i = 1; i <= 5; i++) {
   console.log(i);
 }
       `}
-      ></ConceptBlock>
+      />
+      <ConceptBlock
+        title="For In Loop"
+        code={`
+const person = {name: "John", age: 30, job: "Developer"};
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+
+name: John
+age: 30
+job: Developer 
+      `}
+        desc="Iterates over the enumerable properties of an object."
+      />
     </MaxWidthWrapper>
   );
 }
