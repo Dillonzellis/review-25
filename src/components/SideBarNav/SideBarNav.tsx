@@ -12,7 +12,7 @@ export default function SideBarNav({ navLinks }: SideBarNavProps) {
         <Link href="/js" className="text-2xl leading-none font-bold">
           JS
         </Link>
-        <hr className="border-t-slate-50 pb-4" />
+        <hr className="border-t-slate-50 pb-2" />
         {navLinks.map((link, idx) => (
           <Link key={idx} href={link.link}>
             {link.title}
