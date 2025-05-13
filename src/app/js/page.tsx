@@ -23,6 +23,7 @@ export default function JsPage() {
       <div className="flex flex-col gap-2">
         <LinkComponent href="js/loops">Loops</LinkComponent>
         <LinkComponent href="js/arrays">Arrays</LinkComponent>
+        <LinkComponent href="js/misc">Misc</LinkComponent>
       </div>
     </MaxWidthWrapper>
   );
