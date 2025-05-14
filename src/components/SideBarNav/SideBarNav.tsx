@@ -1,5 +1,5 @@
-import { NavLinkType } from "@/types/NavLinksType";
 import Link from "next/link";
+import type { NavLinkType } from "./MainNavLinks";
 
 type SideBarNavProps = {
   navLinks: NavLinkType[];
