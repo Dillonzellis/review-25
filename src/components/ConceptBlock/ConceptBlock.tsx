@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { synthwave84 } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { gruvboxDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { TypographyH3 } from "../Typograpy/TypographyH3";
 import { TypographyP } from "../Typograpy/TypographyP";
 
@@ -20,7 +20,7 @@ export default function ConceptBlock({
     <div id={id} className="mb-4 bg-slate-800 p-6">
       <TypographyH3>{title}</TypographyH3>
       <code>
-        <SyntaxHighlighter language="javascript" style={synthwave84}>
+        <SyntaxHighlighter language="javascript" style={gruvboxDark}>
           {code}
         </SyntaxHighlighter>
       </code>
