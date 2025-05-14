@@ -1,5 +1,5 @@
-import hljs from "highlight.js/lib/core";
-import javascript from "highlight.js/lib/languages/javascript";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { synthwave84 } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { TypographyH3 } from "../Typograpy/TypographyH3";
 import { TypographyP } from "../Typograpy/TypographyP";
 
@@ -16,17 +16,13 @@ export default function ConceptBlock({
   code,
   desc,
 }: ConceptBlockType) {
-  hljs.registerLanguage("javascript", javascript);
-
-  const hightlightedCode = hljs.highlight(code, {
-    language: "javascript",
-  }).value;
-
   return (
     <div id={id} className="mb-4 bg-slate-800 p-6">
       <TypographyH3>{title}</TypographyH3>
       <code>
-        <pre>{hightlightedCode}</pre>
+        <SyntaxHighlighter language="javascript" style={synthwave84}>
+          {code}
+        </SyntaxHighlighter>
       </code>
       {desc && <TypographyP className="italic">{desc}</TypographyP>}
     </div>
