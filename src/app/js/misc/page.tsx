@@ -2,7 +2,7 @@ import MaxWidthWrapper from "@/components/UI/MaxWidthWrapper";
 import ConceptBlock from "@/components/ConceptBlock/ConceptBlock";
 import SideBarNav from "@/components/SideBarNav/SideBarNav";
 import { NavMainData } from "@/components/SideBarNav/MainNavLinks";
-import TypographyH1 from "@/components/Typograpy/TypographyH1";
+import TypographyH1 from "@/components/Typography/TypographyH1";
 
 export default function MiscPage() {
   return (

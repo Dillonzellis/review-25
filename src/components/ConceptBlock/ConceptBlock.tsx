@@ -1,7 +1,7 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { gruvboxDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { TypographyH3 } from "../Typograpy/TypographyH3";
-import { TypographyP } from "../Typograpy/TypographyP";
+import { TypographyP } from "../Typography/TypographyP";
+import { TypographyH3 } from "../Typography/TypographyH3";
 
 type ConceptBlockType = {
   id: string;

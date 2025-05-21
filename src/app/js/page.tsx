@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MaxWidthWrapper from "@/components/UI/MaxWidthWrapper";
-import TypographyH1 from "@/components/Typograpy/TypographyH1";
+import TypographyH1 from "@/components/Typography/TypographyH1";
 
 type LinkComponentProps = {
   href: string;
