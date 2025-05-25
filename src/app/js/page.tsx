@@ -1,19 +1,6 @@
-import Link from "next/link";
 import MaxWidthWrapper from "@/components/UI/MaxWidthWrapper";
 import TypographyH1 from "@/components/Typography/TypographyH1";
-
-type LinkComponentProps = {
-  href: string;
-  children: React.ReactNode;
-};
-
-function LinkComponent({ href, children }: LinkComponentProps) {
-  return (
-    <Link href={href} className="text-xl font-bold hover:underline">
-      {children}
-    </Link>
-  );
-}
+import LinkComponent from "@/components/UI/LinkComponent";
 
 export default function JsPage() {
   return (
