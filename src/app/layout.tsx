@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const links = [
   { name: "Main", url: "/" },
   { name: "JS", url: "/js" },
+  { name: "DSA", url: "/dsa" },
 ];
 
 export default function RootLayout({
@@ -23,13 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className}`}>
       <body className="min-h-screen bg-zinc-950 text-zinc-200 antialiased">
-        <header className="mx-2 flex border-b border-b-zinc-700 px-12 py-4">
+        <header className="mx-2 flex border-b border-b-zinc-700 px-8 py-4">
           <ul className="flex gap-4">
             {links.map((link) => (
-              <li>
-                <Link key={link.name} href={link.url}>
-                  {link.name}
-                </Link>
+              <li key={link.name}>
+                <Link href={link.url}>{link.name}</Link>
               </li>
             ))}
           </ul>
