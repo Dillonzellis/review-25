@@ -17,11 +17,7 @@ export default function JsPage() {
   return (
     <div className="px-12 py-4">
       <h1>DSA</h1>
-      <div className="flex flex-col gap-2">
-        <LinkComponent href="js/loops">Loops</LinkComponent>
-        <LinkComponent href="js/arrays">Arrays</LinkComponent>
-        <LinkComponent href="js/misc">Misc</LinkComponent>
-      </div>
+      <div className="flex flex-col gap-2"></div>
     </div>
   );
 }
