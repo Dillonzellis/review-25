@@ -120,3 +120,27 @@
   /*   @apply bg-background text-foreground; */
   /* } */
 }
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/*ul {*/
+/*  list-style-type: disc;*/
+/*  list-style-position: inside;*/
+/*}*/
+
+hr {
+  color: var(--color-gray-200);
+}
