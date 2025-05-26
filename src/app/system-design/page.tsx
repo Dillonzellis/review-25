@@ -6,16 +6,15 @@ export default function SystemDesignPage() {
       <h1 className="pb-4 text-lg font-semibold">System Design</h1>
       <div className="space-y-4">
         <div className="font-medium italic">
-          "Design a news article system like AJC"
+          `&quot;`Design a news article system like AJC`&quote;`
         </div>
         <div>
           <div>Gather Requirements</div>
           <UnorderListsContent
             lis={[
-              `Clarify scope: "Are we building the full platform or focusing on the
-            article reading experience?"`,
-              `Scale: "How many concurrent users? Articles per day?"`,
-              `Key features: "Real-time comments? Social sharing? Personalization?"`,
+              'Clarify scope:  "Are we building the full platform or focusing on the article reading experience?"',
+              'Scale: "How many concurrent users? Articles per day?"',
+              'Key features: "Real-time comments? Social sharing? Personalization?"',
             ]}
           />
         </div>
